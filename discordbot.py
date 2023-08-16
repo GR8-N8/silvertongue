@@ -11,7 +11,7 @@ def analyze_conversation(conversation):
     dialogue = " ".join(participants)
 
     prompt = (
-         f"Participant A has expressed the following concerns:\n{participant_a_story}\n"
+        f"Participant A has expressed the following concerns:\n{participant_a_story}\n"
         f"Participant B has expressed the following concerns:\n{participant_b_story}\n"
         "Based on non-violent communication principles, please help them understand each other's needs and feelings. "
         "Identify the underlying causes of their disagreement, and suggest ways they might reach a common agreement. "
