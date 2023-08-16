@@ -11,14 +11,11 @@ def analyze_conversation(conversation):
     dialogue = " ".join(participants)
 
     prompt = (
-        f"This is a conversation between two individuals:\n{dialogue}\n"
-        "Please provide an analytic breakdown of the conversation, identifying the following:"
-        "\n1. Recognize the primary emotions exhibited by each participant using Emotional Intelligence."
-        "\n2. Identify areas for clarification and encourage open-ended questions through Active Listening."
-        "\n3. Detect passive or aggressive language and suggest open but respectful communication with Assertiveness Training."
-        "\n4. Uncover negative thought patterns and provide alternative ways of thinking using Cognitive-Behavioral Techniques."
-        "\n5. Encourage presence, engagement, and empathy through Mindfulness."
-        "\n6. Translate charged language into compassionate communication, identifying the giraffe and jackal aspects, using Nonviolent Communication."
+         f"Participant A has expressed the following concerns:\n{participant_a_story}\n"
+        f"Participant B has expressed the following concerns:\n{participant_b_story}\n"
+        "Based on non-violent communication principles, please help them understand each other's needs and feelings. "
+        "Identify the underlying causes of their disagreement, and suggest ways they might reach a common agreement. "
+        "Include an analysis of emotions, communication styles, and opportunities for compassionate understanding."
     )
 
     response = openai.Completion.create(
