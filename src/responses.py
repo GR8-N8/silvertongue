@@ -97,7 +97,7 @@ def handle_private_response(username, message):
         return response
 
 
-def get_completion_from_messages(messages, model="gpt-3.5-turbo", temperature=0):
+def get_completion_from_messages(messages, model="gpt-3.5-turbo-16k", temperature=0.8):
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
